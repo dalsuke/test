@@ -749,16 +749,14 @@ h1, h2, h3, .logo {
   counter-reset: step;
   list-style: none;
   padding-left: 0;
-  overflow: hidden;
 }
 
 .process-list li {
   counter-increment: step;
   list-style: none;
-  display: grid;
-  grid-template-columns: auto 1fr;
-  align-items: baseline;
-  column-gap: 0.8rem;
+  position: relative;
+  padding-left: 3rem;
+  min-height: 2rem;
 }
 
 .process-list li::marker {
@@ -767,14 +765,18 @@ h1, h2, h3, .logo {
 
 .process-list li::before {
   content: counter(step);
-  min-width: 1.8rem;
+  position: absolute;
+  left: 0.2rem;
+  top: 0.05rem;
+  width: 2rem;
+  height: 2rem;
   color: #9fe3bf;
   font-weight: 700;
   text-align: center;
   border: 1px solid rgba(99, 255, 178, 0.28);
   border-radius: 999px;
   background: rgba(7, 23, 14, 0.82);
-  line-height: 1.55rem;
+  line-height: 1.95rem;
 }
 
 .btn {
