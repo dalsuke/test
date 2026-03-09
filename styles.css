@@ -145,17 +145,11 @@ p { margin: 0; }
 }
 
 .btn-primary {
-  background: transparent;
-  border: none;
-}
-
-.btn-primary::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  z-index: -1;
-  border-radius: inherit;
   background: var(--gradient);
+  border: none;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  -webkit-mask-image: -webkit-radial-gradient(white, black);
 }
 
 .btn-ghost {
