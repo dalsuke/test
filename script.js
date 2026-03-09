@@ -103,3 +103,17 @@ if (reviewForm && reviewsList) {
     reviewForm.reset();
   });
 }
+
+const logoImg = document.querySelector(".logo-img");
+const logoText = document.querySelector(".logo-text");
+
+if (logoImg && logoText) {
+  logoImg.addEventListener("load", () => {
+    logoText.style.display = "none";
+  });
+
+  logoImg.addEventListener("error", () => {
+    logoImg.style.display = "none";
+    logoText.style.display = "inline";
+  });
+}
