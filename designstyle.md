@@ -255,7 +255,7 @@ I create web apps
 
 технологии
 
-[ Live Demo ] [ GitHub ]
+[ Watch Demo ] [ GitHub ]
 ```
 
 Hover эффект:

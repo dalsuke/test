@@ -126,7 +126,7 @@
 
 Кнопки:
 
-* Live Demo
+* Watch Demo
 * GitHub
 
 ---

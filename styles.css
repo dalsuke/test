@@ -754,6 +754,28 @@ h1, h2, h3, .logo {
   list-style: decimal;
 }
 
+/* Keep process steps as plain numbered items (no pill bars). */
+.process-list {
+  list-style: none;
+  counter-reset: process-step;
+  padding-left: 0;
+}
+
+.process-list li {
+  counter-increment: process-step;
+  list-style: none;
+  background: none;
+  border: 0;
+  box-shadow: none;
+  padding: 0;
+}
+
+.process-list li::before {
+  content: counter(process-step) ". ";
+  color: var(--text);
+  font-weight: 700;
+}
+
 .btn {
   border-radius: 10px;
 }
