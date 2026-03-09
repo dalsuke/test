@@ -126,6 +126,7 @@ p { margin: 0; }
   position: relative;
   isolation: isolate;
   overflow: hidden;
+  -webkit-tap-highlight-color: transparent;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -145,11 +146,11 @@ p { margin: 0; }
 }
 
 .btn-primary {
-  background: var(--gradient);
+  background: linear-gradient(135deg, #7c3aed 0%, #5e6df6 52%, #22d3ee 100%);
   border: none;
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  -webkit-mask-image: -webkit-radial-gradient(white, black);
+  box-shadow:
+    inset 0 0 0 1px rgba(255, 255, 255, 0.18),
+    0 10px 28px rgba(94, 109, 246, 0.3);
 }
 
 .btn-ghost {
