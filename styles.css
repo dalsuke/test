@@ -749,14 +749,20 @@ h1, h2, h3, .logo {
   counter-reset: step;
   list-style: none;
   padding-left: 0;
+  overflow: hidden;
 }
 
 .process-list li {
   counter-increment: step;
+  list-style: none;
   display: grid;
   grid-template-columns: auto 1fr;
   align-items: baseline;
   column-gap: 0.8rem;
+}
+
+.process-list li::marker {
+  content: "";
 }
 
 .process-list li::before {
