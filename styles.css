@@ -654,3 +654,161 @@ textarea {
     border-radius: 10px;
   }
 }
+
+/* Hacker theme preset based on logo.jpg */
+:root {
+  --bg: #050806;
+  --panel: rgba(6, 12, 8, 0.82);
+  --panel-border: rgba(95, 255, 165, 0.22);
+  --text: #d9ffe8;
+  --muted: #89b59d;
+  --accent-1: #1a5f3a;
+  --accent-2: #63ffb2;
+  --gradient: linear-gradient(120deg, var(--accent-1), var(--accent-2));
+  --cta-accent: #21d07d;
+  --shadow: 0 14px 40px rgba(0, 0, 0, 0.55);
+}
+
+body {
+  font-family: "JetBrains Mono", monospace;
+  background: radial-gradient(circle at 50% -20%, #0b1a11 0%, #050806 56%);
+}
+
+body::before {
+  background:
+    linear-gradient(rgba(3, 10, 6, 0.9), rgba(3, 10, 6, 0.92)),
+    url("./logo.jpg") center / 460px auto repeat;
+  opacity: 0.22;
+  filter: grayscale(1) contrast(1.2) brightness(0.62);
+}
+
+h1, h2, h3, .logo, .typed {
+  font-family: "Share Tech Mono", monospace;
+}
+
+.topbar {
+  border-bottom: 1px solid rgba(93, 255, 170, 0.24);
+  background: linear-gradient(90deg, rgba(20, 60, 38, 0.45) 0%, rgba(5, 10, 7, 0.95) 22%, rgba(3, 6, 4, 0.98) 100%);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.45);
+}
+
+.logo {
+  color: #d8ffe8;
+  text-shadow: 0 0 14px rgba(99, 255, 178, 0.36);
+}
+
+.logo-img {
+  border-color: rgba(99, 255, 178, 0.35);
+  box-shadow: 0 0 0 1px rgba(95, 255, 165, 0.18), 0 12px 24px rgba(0, 0, 0, 0.55);
+}
+
+.nav a {
+  color: #9bc7ad;
+}
+
+.nav a:hover {
+  color: #d9ffe8;
+  text-shadow: 0 0 14px rgba(99, 255, 178, 0.42);
+}
+
+.eyebrow {
+  color: #63ffb2;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.hero h1 {
+  text-shadow: 0 0 18px rgba(91, 233, 160, 0.16);
+}
+
+.glass,
+.stat-card,
+.skill-group,
+.contact-form,
+.review-form,
+.contact-links,
+.process-list,
+.quote,
+.project-card,
+.card,
+.skills-catalog,
+.skills-progress {
+  background: linear-gradient(rgba(8, 15, 10, 0.84), rgba(8, 15, 10, 0.84));
+  border: 1px solid rgba(99, 255, 178, 0.2);
+  box-shadow: inset 0 0 0 1px rgba(46, 160, 106, 0.18), var(--shadow);
+}
+
+.btn {
+  border-radius: 10px;
+}
+
+.btn-primary {
+  background: linear-gradient(120deg, #0e6b40 0%, #24d885 100%);
+  color: #041009;
+  font-weight: 700;
+  box-shadow: 0 8px 24px rgba(36, 216, 133, 0.34);
+}
+
+.btn-primary:hover {
+  box-shadow: 0 10px 26px rgba(36, 216, 133, 0.5);
+}
+
+.btn-ghost {
+  border-color: rgba(99, 255, 178, 0.35);
+  background: rgba(13, 30, 20, 0.65);
+}
+
+.tech-row li,
+.skill-icon {
+  border-color: rgba(99, 255, 178, 0.25);
+  background: rgba(13, 28, 19, 0.7);
+}
+
+.skill-icon {
+  color: #bcffd9;
+  background:
+    linear-gradient(rgba(4, 12, 8, 0.58), rgba(4, 12, 8, 0.58)),
+    url("./logo.jpg") center / cover no-repeat;
+}
+
+.bar {
+  background: rgba(71, 155, 111, 0.2);
+}
+
+.bar i {
+  background: linear-gradient(120deg, #1a7a4b, #63ffb2);
+  box-shadow: 0 0 14px rgba(99, 255, 178, 0.35);
+}
+
+.thumb {
+  color: #c8ffdf;
+  background:
+    linear-gradient(rgba(6, 15, 10, 0.58), rgba(6, 15, 10, 0.58)),
+    url("./logo.jpg") center / cover no-repeat;
+  border-color: rgba(99, 255, 178, 0.28);
+}
+
+input,
+textarea {
+  border-color: rgba(99, 255, 178, 0.28);
+  background: rgba(10, 24, 16, 0.72);
+  color: #d9ffe8;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #7ca892;
+}
+
+.shape-a {
+  background: rgba(26, 122, 75, 0.22);
+}
+
+.shape-b {
+  background: rgba(99, 255, 178, 0.13);
+}
+
+.noise {
+  opacity: 0.24;
+  background-image: radial-gradient(#8dffbe 0.5px, transparent 0.5px);
+}
