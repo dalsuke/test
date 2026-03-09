@@ -123,6 +123,9 @@ p { margin: 0; }
 }
 
 .btn {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -142,8 +145,17 @@ p { margin: 0; }
 }
 
 .btn-primary {
-  background: var(--gradient);
+  background: transparent;
   border: none;
+}
+
+.btn-primary::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  border-radius: inherit;
+  background: var(--gradient);
 }
 
 .btn-ghost {
