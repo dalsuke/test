@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Портфолио | Frontend Developer</title>
+  <meta name="description" content="Лендинг-портфолио frontend разработчика: проекты, навыки, услуги, процесс и контакты." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700&family=Sora:wght@500;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <div class="bg-shape shape-a" aria-hidden="true"></div>
+  <div class="bg-shape shape-b" aria-hidden="true"></div>
+  <div class="noise" aria-hidden="true"></div>
+
+  <header class="topbar">
+    <div class="header container">
+      <a class="logo" href="#hero">DK</a>
+      <nav class="nav">
+        <a href="#about">Обо мне</a>
+        <a href="#skills">Навыки</a>
+        <a href="#projects">Проекты</a>
+        <a href="#contact">Контакты</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="hero" class="hero container reveal">
+      <p class="eyebrow">Frontend Developer</p>
+      <h1>Создаю современные web experiences для бизнеса и стартапов</h1>
+      <p class="hero-sub">Я делаю быстрые, адаптивные и удобные сайты. <span id="typed" class="typed"></span></p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#projects">Смотреть проекты</a>
+        <a class="btn btn-ghost" href="#contact">Связаться со мной</a>
+      </div>
+      <ul class="tech-row" aria-label="Технологии">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>React</li>
+        <li>Node.js</li>
+      </ul>
+    </section>
+
+    <section id="about" class="container reveal">
+      <div class="glass about-grid">
+        <div>
+          <h2>Обо мне</h2>
+          <p>Я веб-разработчик, специализируюсь на frontend и лендинг-страницах. Помогаю компаниям запускать понятные и конверсионные сайты.</p>
+        </div>
+        <div class="stats">
+          <article class="stat-card"><strong>30+</strong><span>проектов</span></article>
+          <article class="stat-card"><strong>3 года</strong><span>опыта</span></article>
+          <article class="stat-card"><strong>15</strong><span>довольных клиентов</span></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="container reveal">
+      <h2>Skills</h2>
+      <div class="skills-layout">
+        <article class="glass skills-catalog">
+          <div class="skill-group">
+            <h3>Frontend</h3>
+            <p>HTML • CSS • JavaScript • React</p>
+          </div>
+          <div class="skill-group">
+            <h3>Styling</h3>
+            <p>Tailwind • SCSS • Responsive Design</p>
+          </div>
+          <div class="skill-group">
+            <h3>Tools</h3>
+            <p>Git • GitHub • Figma • Vite</p>
+          </div>
+          <div class="skill-group">
+            <h3>Backend</h3>
+            <p>Node.js • Express • MongoDB</p>
+          </div>
+        </article>
+        <article class="glass skills-progress">
+          <h3>Progress</h3>
+          <div class="progress-item"><span>JavaScript</span><div class="bar"><i style="width: 90%"></i></div><b>90%</b></div>
+          <div class="progress-item"><span>React</span><div class="bar"><i style="width: 80%"></i></div><b>80%</b></div>
+          <div class="progress-item"><span>CSS</span><div class="bar"><i style="width: 95%"></i></div><b>95%</b></div>
+        </article>
+      </div>
+      <div class="skills-icons-grid">
+        <article class="glass skill-icon-card"><span class="skill-icon">H</span><strong>HTML</strong></article>
+        <article class="glass skill-icon-card"><span class="skill-icon">C</span><strong>CSS</strong></article>
+        <article class="glass skill-icon-card"><span class="skill-icon">JS</span><strong>JavaScript</strong></article>
+        <article class="glass skill-icon-card"><span class="skill-icon">R</span><strong>React</strong></article>
+        <article class="glass skill-icon-card"><span class="skill-icon">G</span><strong>Git</strong></article>
+        <article class="glass skill-icon-card"><span class="skill-icon">F</span><strong>Figma</strong></article>
+      </div>
+    </section>
+
+    <section id="projects" class="container reveal">
+      <h2>Портфолио проектов</h2>
+      <div class="grid grid-3">
+        <article class="glass project-card">
+          <div class="thumb">Landing Page</div>
+          <h3>Лендинг для фитнес-клуба</h3>
+          <p>Адаптивный лендинг с формой заявки и анимациями.</p>
+          <p class="stack">HTML · CSS · JavaScript</p>
+          <div class="project-actions">
+            <a class="btn btn-small" href="#">Live Demo</a>
+            <a class="btn btn-small btn-ghost" href="https://github.com/dalsuke" target="_blank" rel="noopener noreferrer">GitHub</a>
+          </div>
+        </article>
+        <article class="glass project-card">
+          <div class="thumb">Corporate Site</div>
+          <h3>Сайт юридической компании</h3>
+          <p>Многостраничный сайт с акцентом на доверие и UX.</p>
+          <p class="stack">React · CSS · API</p>
+          <div class="project-actions">
+            <a class="btn btn-small" href="#">Live Demo</a>
+            <a class="btn btn-small btn-ghost" href="https://github.com/dalsuke" target="_blank" rel="noopener noreferrer">GitHub</a>
+          </div>
+        </article>
+        <article class="glass project-card">
+          <div class="thumb">SaaS Promo</div>
+          <h3>Стартап-презентация</h3>
+          <p>Промо-страница с высокой скоростью загрузки.</p>
+          <p class="stack">Next.js · Tailwind · Motion</p>
+          <div class="project-actions">
+            <a class="btn btn-small" href="#">Live Demo</a>
+            <a class="btn btn-small btn-ghost" href="https://github.com/dalsuke" target="_blank" rel="noopener noreferrer">GitHub</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="services" class="container reveal">
+      <h2>Услуги</h2>
+      <div class="grid grid-3">
+        <article class="glass card"><h3>Лендинг</h3><p>Создание продающей лендинг-страницы для бизнеса.</p></article>
+        <article class="glass card"><h3>Корпоративный сайт</h3><p>Разработка многостраничного сайта компании.</p></article>
+        <article class="glass card"><h3>Редизайн</h3><p>Обновление интерфейса и улучшение UX текущего сайта.</p></article>
+      </div>
+    </section>
+
+    <section id="process" class="container reveal">
+      <h2>Процесс работы</h2>
+      <ol class="glass process-list">
+        <li><strong>1. Обсуждение проекта</strong> Определяем задачи и цели сайта.</li>
+        <li><strong>2. Дизайн</strong> Создаём структуру и визуальное решение.</li>
+        <li><strong>3. Разработка</strong> Верстаем, подключаем логику и тестируем.</li>
+        <li><strong>4. Запуск</strong> Публикуем и проверяем метрики.</li>
+      </ol>
+    </section>
+
+    <section id="testimonials" class="container reveal">
+      <h2>Отзывы</h2>
+      <div id="reviews-list" class="grid grid-2 reviews-list">
+        <blockquote class="glass quote">«Очень быстро сделал сайт. Результат превзошёл ожидания.»<cite>Ирина, Founder</cite></blockquote>
+        <blockquote class="glass quote">«Чёткий процесс, понятная коммуникация и отличный финальный результат.»<cite>Максим, Product Manager</cite></blockquote>
+        <blockquote class="glass quote">«Сайт загрузился быстро, мобильная версия получилась отличной.»<cite>Анна, Marketing Lead</cite></blockquote>
+        <blockquote class="glass quote">«Понравилась структура: от брифа до запуска всё прозрачно и по срокам.»<cite>Артём, CEO</cite></blockquote>
+        <blockquote class="glass quote">«Получили больше заявок уже в первую неделю после релиза.»<cite>Елена, Business Owner</cite></blockquote>
+        <blockquote class="glass quote">«Аккуратный код и удобная поддержка после запуска.»<cite>Дмитрий, Product Owner</cite></blockquote>
+      </div>
+      <form id="review-form" class="glass review-form" aria-label="Форма отзыва">
+        <h3>Оставить отзыв</h3>
+        <label>Ваше имя<input type="text" name="author" placeholder="Например, Мария" required /></label>
+        <label>Роль / компания<input type="text" name="role" placeholder="Например, Founder, ACME" required /></label>
+        <label>Текст отзыва<textarea name="text" rows="4" placeholder="Напишите короткий отзыв" required></textarea></label>
+        <button class="btn btn-primary" type="submit">Опубликовать отзыв</button>
+      </form>
+    </section>
+
+    <section id="contact" class="container reveal">
+      <h2>Контакты</h2>
+      <div class="grid grid-2">
+        <form class="glass contact-form">
+          <label>Имя<input type="text" name="name" placeholder="Ваше имя" /></label>
+          <label>Email<input type="email" name="email" placeholder="you@example.com" /></label>
+          <label>Сообщение<textarea name="message" rows="4" placeholder="Опишите задачу"></textarea></label>
+          <button class="btn btn-primary" type="submit">Отправить сообщение</button>
+        </form>
+        <div class="glass contact-links">
+          <p>Для быстрой связи:</p>
+          <a href="#">Telegram</a>
+          <a href="https://github.com/dalsuke" target="_blank" rel="noopener noreferrer">GitHub</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer container">
+    <p>© 2026 Danya Kiriukhin</p>
+  </footer>
+
+  <script src="./script.js"></script>
+</body>
+</html>
