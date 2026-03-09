@@ -143,6 +143,7 @@ p { margin: 0; }
 
 .btn-primary {
   background: var(--gradient);
+  border: none;
 }
 
 .btn-ghost {
