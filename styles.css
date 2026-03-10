@@ -911,9 +911,24 @@ h1, h2, h3, .logo {
 }
 
 .btn {
-  border-radius: 10px;
+  border-radius: 12px;
   position: relative;
   overflow: hidden;
+  transform: translateY(0) scale(1);
+  will-change: transform, box-shadow;
+  transition: transform 0.28s ease, box-shadow 0.28s ease, filter 0.28s ease;
+}
+
+.btn::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at 20% 12%, rgba(205, 220, 245, 0.16), transparent 56%),
+    linear-gradient(112deg, rgba(120, 147, 186, 0.06), rgba(120, 147, 186, 0));
+  opacity: 0.55;
+  pointer-events: none;
+  animation: btnAmbient 4.8s ease-in-out infinite;
 }
 
 .btn::after {
@@ -930,6 +945,15 @@ h1, h2, h3, .logo {
   left: 124%;
 }
 
+.btn:hover {
+  transform: translateY(-3px) scale(1.01);
+  filter: brightness(1.06);
+}
+
+.btn:active {
+  transform: translateY(-1px) scale(0.985);
+}
+
 .btn-primary {
   background: linear-gradient(120deg, #36445f 0%, #8da1c2 100%);
   color: #f2f6ff;
@@ -941,13 +965,18 @@ h1, h2, h3, .logo {
 }
 
 .btn-primary:hover {
-  box-shadow: 0 0 0 1px rgba(178, 196, 224, 0.26), 0 12px 28px rgba(0, 0, 0, 0.55);
+  box-shadow: 0 0 0 1px rgba(178, 196, 224, 0.32), 0 16px 34px rgba(0, 0, 0, 0.62);
   animation-play-state: paused;
 }
 
 .btn-ghost {
   border-color: rgba(148, 166, 194, 0.24);
   background: rgba(6, 9, 14, 0.72);
+  box-shadow: 0 0 0 1px rgba(148, 166, 194, 0.1), inset 0 0 0 1px rgba(148, 166, 194, 0.06);
+}
+
+.btn-ghost:hover {
+  box-shadow: 0 0 0 1px rgba(178, 196, 224, 0.26), 0 10px 24px rgba(0, 0, 0, 0.5);
 }
 
 .tech-row li,
@@ -1199,6 +1228,12 @@ body::after {
   50% { box-shadow: 0 0 0 1px rgba(178, 196, 224, 0.24), 0 12px 30px rgba(0, 0, 0, 0.5); }
   100% { box-shadow: 0 0 0 1px rgba(148, 166, 194, 0.14), 0 8px 20px rgba(0, 0, 0, 0.28); }
 }
+
+@keyframes btnAmbient {
+  0%, 100% { opacity: 0.46; transform: translateX(-2%); }
+  50% { opacity: 0.72; transform: translateX(2%); }
+}
+
 
 @keyframes backgroundDrift {
   0% { background-position: 50% 40%; }
