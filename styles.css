@@ -512,6 +512,15 @@ textarea {
   color: var(--muted);
 }
 
+.footer p {
+  margin: 0;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: clamp(0.82rem, 1.15vw, 0.95rem);
+  letter-spacing: 0.01em;
+  font-weight: 500;
+  color: rgba(220, 230, 247, 0.82);
+}
+
 .bg-shape {
   position: fixed;
   z-index: -2;
