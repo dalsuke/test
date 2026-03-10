@@ -956,16 +956,155 @@ h1, h2, h3, .logo {
   background: rgba(7, 11, 18, 0.78);
 }
 
+.skills-icons-grid {
+  gap: 1rem;
+  align-items: stretch;
+}
+
+.skill-icon-card {
+  min-height: 180px;
+  padding: 1rem 0.8rem;
+  border-radius: 18px;
+  gap: 0.8rem;
+  align-content: center;
+}
+
 .skill-icon {
+  width: 72px;
+  height: 72px;
+  font-size: 0.95rem;
+  font-weight: 700;
   color: #dbe7f7;
-  background: linear-gradient(rgba(8, 12, 20, 0.82), rgba(8, 12, 20, 0.82));
+  background: radial-gradient(circle at 50% 35%, rgba(26, 35, 51, 0.95), rgba(7, 11, 18, 0.92));
+  border: 1px solid rgba(148, 166, 194, 0.26);
+  box-shadow: inset 0 0 0 1px rgba(148, 166, 194, 0.12);
+  position: relative;
+  overflow: hidden;
   animation: iconFloat 4.2s ease-in-out infinite;
 }
 
+.skill-icon::before {
+  content: "";
+  position: absolute;
+  inset: 6px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 40% 35%, rgba(173, 186, 209, 0.16), rgba(8, 13, 22, 0.24));
+  border: 1px solid rgba(148, 166, 194, 0.22);
+}
+
+.skill-icon-image {
+  width: 56%;
+  height: 56%;
+  object-fit: contain;
+  border-radius: 8px;
+  display: block;
+  position: relative;
+  z-index: 1;
+  filter: grayscale(1) saturate(0) contrast(1.35) brightness(1.3);
+  mix-blend-mode: screen;
+  opacity: 0.95;
+  transform: translateZ(0);
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.skill-icon-card:hover .skill-icon-image {
+  transform: scale(1.04);
+  opacity: 1;
+}
+
+.html-icon .skill-icon-image,
+.git-icon .skill-icon-image {
+  width: 60%;
+  height: 60%;
+  padding: 0;
+  border-radius: 0;
+  background: transparent;
+  filter: grayscale(1) contrast(1.28) brightness(1.22);
+  mix-blend-mode: normal;
+  opacity: 1;
+}
+
+.git-icon .skill-icon-image {
+  width: 54%;
+  height: 54%;
+  padding: 4px;
+  border-radius: 50%;
+  object-fit: cover;
+  background: rgba(10, 15, 24, 0.92);
+  box-shadow: inset 0 0 0 1px rgba(160, 176, 204, 0.22);
+}
+
+.css-icon .skill-icon-image,
+.js-icon .skill-icon-image {
+  width: 54%;
+  height: 54%;
+  padding: 4px;
+  border-radius: 50%;
+  object-fit: cover;
+  background: rgba(10, 15, 24, 0.92);
+  box-shadow: inset 0 0 0 1px rgba(160, 176, 204, 0.22);
+}
+
+.skill-icon-card strong {
+  font-size: clamp(1.05rem, 1.45vw, 1.2rem);
+  letter-spacing: 0.01em;
+  color: #eef3ff;
+  text-shadow: 0 1px 8px rgba(0, 0, 0, 0.45);
+}
+
 .react-icon {
-  background:
-    linear-gradient(rgba(8, 12, 20, 0.48), rgba(8, 12, 20, 0.48)),
-    url("./logo-og.png") center / cover no-repeat;
+  background: radial-gradient(circle at 50% 35%, rgba(26, 35, 51, 0.95), rgba(7, 11, 18, 0.92));
+}
+
+.css-icon {
+  background: radial-gradient(circle at 50% 35%, rgba(26, 35, 51, 0.95), rgba(7, 11, 18, 0.92));
+}
+
+.html-icon {
+  background: radial-gradient(circle at 50% 35%, rgba(26, 35, 51, 0.95), rgba(7, 11, 18, 0.92));
+}
+
+.git-icon {
+  background: radial-gradient(circle at 50% 35%, rgba(26, 35, 51, 0.95), rgba(7, 11, 18, 0.92));
+}
+
+.figma-icon {
+  background: radial-gradient(circle at 50% 35%, rgba(26, 35, 51, 0.95), rgba(7, 11, 18, 0.92));
+}
+
+.js-icon {
+  background: radial-gradient(circle at 50% 35%, rgba(26, 35, 51, 0.95), rgba(7, 11, 18, 0.92));
+}
+
+/* Harmonize all icon images in skill cards */
+.html-icon .skill-icon-image,
+.css-icon .skill-icon-image,
+.js-icon .skill-icon-image,
+.react-icon .skill-icon-image,
+.git-icon .skill-icon-image,
+.figma-icon .skill-icon-image {
+  width: 54%;
+  height: 54%;
+  padding: 4px;
+  border-radius: 50%;
+  object-fit: cover;
+  background: rgba(12, 18, 28, 0.94);
+  box-shadow: inset 0 0 0 1px rgba(164, 181, 206, 0.24);
+  filter: grayscale(1) saturate(0) contrast(1.3) brightness(1.28);
+  mix-blend-mode: normal;
+  opacity: 1;
+}
+
+/* HTML logo file is dark, keep it readable on dark background */
+.html-icon .skill-icon-image {
+  background: transparent;
+  width: 58%;
+  height: 58%;
+  padding: 0;
+  border-radius: 0;
+  object-fit: contain;
+  filter: grayscale(1) contrast(1.22) brightness(1.1);
+  mix-blend-mode: multiply;
 }
 
 .bar {
